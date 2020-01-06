@@ -1,0 +1,47 @@
+{
+    "name": "krash-language",
+    "displayName": "Krash Language",
+    "description": "Krash language support for VS Code",
+    "version": "1.0.0",
+    "author": "CraicOverflow89",
+    "publisher": "CraicOverflow89",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CraicOverflow89/VSC-Krash-Language.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CraicOverflow89/VSC-Krash-Language/issues"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "krash"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "krash",
+                "aliases": [
+                    "Krash",
+                    "krash"
+                ],
+                "extensions": [
+                    ".krash"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "krash",
+                "scopeName": "source.krash",
+                "path": "./syntaxes/krash.tmLanguage.json"
+            }
+        ]
+    }
+}
