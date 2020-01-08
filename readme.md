@@ -5,7 +5,6 @@ Provides Krash language support for VS Code.
 
 ### Tasks
 
- - syntax rules for `!ref` and `&ref` modifiers
  - create icon
 
 ### See Also

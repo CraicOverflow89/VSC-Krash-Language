@@ -18,7 +18,11 @@
 	"repository": {
 		"comments": {
 			"patterns": [{
-				"name": "comment.line.double-slash.krash",
+				"name": "comment.line.double-slash.xs",
+				"match": "//.*"
+			},
+			{
+				"name": "comment.line.double-slash.xs",
 				"begin": "/\\*",
 				"end": "\\*/"
 			}]
@@ -37,6 +41,10 @@
 			"patterns": [{
 				"name": "keyword.control.krash",
 				"match": "\\b(fun|return)\\b"
+			},
+			{
+				"name": "keyword.other.xs",
+				"match": "(!|&)"
 			}]
 		},
 		"strings": {
