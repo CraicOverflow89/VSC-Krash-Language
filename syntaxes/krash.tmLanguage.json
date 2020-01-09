@@ -30,7 +30,7 @@
 		"constants": {
 			"patterns": [{
 				"name": "constant.language.krash",
-				"match": "\\b(false|true)\\b"
+				"match": "\\b(false|null|true)\\b"
 			},
 			{
 				"name": "constant.numeric.krash",
