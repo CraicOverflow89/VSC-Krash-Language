@@ -18,11 +18,11 @@
 	"repository": {
 		"comments": {
 			"patterns": [{
-				"name": "comment.line.double-slash.xs",
+				"name": "comment.line.double-slash.krash",
 				"match": "//.*"
 			},
 			{
-				"name": "comment.line.double-slash.xs",
+				"name": "comment.line.double-slash.krash",
 				"begin": "/\\*",
 				"end": "\\*/"
 			}]
@@ -30,7 +30,7 @@
 		"constants": {
 			"patterns": [{
 				"name": "constant.language.krash",
-				"match": "\\b(false|null|true)\\b"
+				"match": "(\\b(false|null|true)\\b|\\$[A-Z]+)"
 			},
 			{
 				"name": "constant.numeric.krash",
@@ -40,11 +40,11 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.krash",
-				"match": "\\b(else|fun|if|return|while)\\b"
+				"match": "\\b(abstract|break|class|continue|else|fun|if|open|return|while)\\b"
 			},
 			{
-				"name": "keyword.other.xs",
-				"match": "(!|&)"
+				"name": "keyword.other.krash",
+				"match": "(&|@)"
 			}]
 		},
 		"strings": {
@@ -55,6 +55,10 @@
 				{
 					"name": "constant.character.escape.krash",
 					"match": "\\\\."
+				},
+				{
+					"name": "keyword.other.krash",
+					"match": "\\$[A-Za-z_][A-Za-z0-9_]+"
 				}
 			]
 		}
