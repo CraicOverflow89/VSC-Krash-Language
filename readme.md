@@ -10,4 +10,5 @@ Provides Krash language support for VS Code.
 
 ### See Also
 
- - [Krash](https://github.com/CraicOverflow89/Krash)
+ - [Krash Project](https://github.com/CraicOverflow89/Krash)
+ - [Run Script Extension for Visual Studio Code](https://github.com/CraicOverflow89/VSC-Krash-Run-Script)
